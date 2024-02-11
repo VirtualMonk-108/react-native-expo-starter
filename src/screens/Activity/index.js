@@ -2,11 +2,16 @@ import React from "react";
 import { Text, View } from "react-native";
 import styles from "./styles";
 
+import Header from "../../components/Header";
+
 const Activity = () => {
   return (
-    <View style={styles.container}>
-      <Text>Activity</Text>
-    </View>
+    <>
+      <Header showBackButton={true}/>
+      <View style={styles.container}>
+        <Text>Activity</Text>
+      </View>
+    </>
   );
 }
 
